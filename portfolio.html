@@ -19,7 +19,7 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="container">
+      <div class="container main-nav">
         <a class="logo emphasis" href="./index.html"
           ><span class="web">Web</span>Studio</a
         >
@@ -38,13 +38,13 @@
             </li>
           </ul>
         </nav>
-        <ul class="list">
-          <li>
+        <ul class="tel-mail list">
+          <li class="item">
             <a class="add emphasis" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="item">
             <a class="add emphasis" href="tel:+380961111111"
               >+38 096 111 11 11</a
             >
@@ -56,15 +56,21 @@
       <section class="section">
         <div class="container">
           <h1 class="visually-hidden">Наші послуги</h1>
-          <ul class="services list">
-            <li><button type="button" class="btn">Усі</button></li>
-            <li><button type="button" class="btn">Веб-сайти</button></li>
-            <li><button type="button" class="btn">Додатки</button></li>
-            <li><button type="button" class="btn">Дизайн</button></li>
-            <li><button type="button" class="btn">Маркетинг</button></li>
+          <ul class="services services-button list">
+            <li><button type="button" class="btn btn1-size">Усі</button></li>
+            <li>
+              <button type="button" class="btn btn2-size">Веб-сайти</button>
+            </li>
+            <li>
+              <button type="button" class="btn btn3-size">Додатки</button>
+            </li>
+            <li><button type="button" class="btn btn4-size">Дизайн</button></li>
+            <li>
+              <button type="button" class="btn btn5-size">Маркетинг</button>
+            </li>
           </ul>
           <ul class="models list">
-            <li>
+            <li class="item">
               <a href="#">
                 <img
                   src="./images/inform.jpg"
@@ -77,7 +83,8 @@
                 <p class="text">Веб-сайт</p>
               </div>
             </li>
-            <li>
+
+            <li class="item">
               <a href="#">
                 <img
                   src="./images/basketball.jpg"
@@ -91,7 +98,8 @@
                 <p class="text">Дизайн</p>
               </div>
             </li>
-            <li>
+
+            <li class="item">
               <a href="#">
                 <img
                   src="./images/seafood.jpg"
@@ -104,7 +112,8 @@
                 <p class="text">Додаток</p>
               </div>
             </li>
-            <li>
+
+            <li class="item">
               <a href="#">
                 <img
                   src="./images/headphones.jpg"
@@ -117,7 +126,8 @@
                 <p class="text">Маркетинг</p>
               </div>
             </li>
-            <li>
+
+            <li class="item">
               <a href="#">
                 <img
                   src="./images/box.jpg"
@@ -130,7 +140,8 @@
                 <p class="text">Додаток</p>
               </div>
             </li>
-            <li>
+
+            <li class="item">
               <a href="#">
                 <img
                   src="./images/screen.jpg"
@@ -143,7 +154,8 @@
                 <p class="text">Веб-сайт</p>
               </div>
             </li>
-            <li>
+
+            <li class="item">
               <a href="#">
                 <img src="./images/book.jpg" alt="Книжка" width="370" />
               </a>
@@ -152,7 +164,8 @@
                 <p class="text">Дизайн</p>
               </div>
             </li>
-            <li>
+
+            <li class="item">
               <a href="#">
                 <img src="./images/lab.jpg" alt="Бірка" width="370" />
               </a>
@@ -161,7 +174,8 @@
                 <p class="text">Маркетинг</p>
               </div>
             </li>
-            <li>
+
+            <li class="item">
               <a href="#">
                 <img src="./images/laptop.jpg" alt="Ноутбук" width="370" />
               </a>
@@ -175,33 +189,35 @@
       </section>
     </main>
     <footer class="info">
-      <a class="logo emphasis" href="./index.html">
-        <span class="f-web">Web</span><span class="f-studio">Studio</span></a
-      >
-      <address>
-        <ul class="info list">
-          <li>
-            <a
-              class="address emphasis"
-              href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-            >
-              м.Київ, пр-т Лесі Українки, 26</a
-            >
-          </li>
-          <li>
-            <a class="contact emphasis" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="contact emphasis" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
+      <div class="container">
+        <a class="logo-footer emphasis" href="./index.html">
+          <span class="f-web">Web</span><span class="f-studio">Studio</span></a
+        >
+        <address>
+          <ul class="info-company list">
+            <li>
+              <a
+                class="address emphasis"
+                href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                м.Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li>
+              <a class="contact emphasis" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="contact emphasis" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>

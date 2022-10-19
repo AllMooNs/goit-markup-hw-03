@@ -8,6 +8,7 @@
   --white: #fff;
   --btn-bg-color: #f5f4fa;
   --btn-hero-color: #188ce8;
+  --border-header: #ececec;
 }
 
 body {
@@ -51,7 +52,7 @@ img {
 /* Header */
 
 .page-header {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--border-header);
 }
 
 .web {
@@ -69,13 +70,15 @@ img {
 }
 
 .main-nav {
+  padding-top: 24px;
+  padding: 25px;
+
   display: flex;
   align-items: center;
 }
 
 .site-nav {
   display: flex;
-  /* margin-left: 93px; */
 }
 
 .site-nav .item:not(:last-child) {
@@ -129,12 +132,14 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--second-bc);
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
   color: var(--white);
   font-weight: 900;
   font-size: 44px;
@@ -163,6 +168,7 @@ img {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  margin: 0 auto;
 }
 
 .hero .btn:hover,
@@ -182,6 +188,15 @@ img {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.benefits > .item {
+  flex-basis: calc(100% / 4);
 }
 
 .benefits .title {
@@ -204,6 +219,25 @@ img {
 
 .bg-color {
   background-color: var(--btn-bg-color);
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services > .item {
+  flex-basis: calc(100% / 3);
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team > .item {
+  flex-basis: calc(100% / 4);
 }
 
 .team .title {
@@ -234,28 +268,21 @@ img {
 /* footer */
 
 .info {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--second-bc);
 }
 
-.info .address {
-  color: var(--white);
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
+.logo-footer {
+  margin-bottom: 20px;
 
-.info .contact {
-  color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  display: block;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
-}
-
-.info .contact:hover,
-.info .contact:focus {
-  color: var(--accent-color);
 }
 
 .f-web {
@@ -265,9 +292,39 @@ img {
 .f-studio {
   color: var(--white);
 }
+
+.info-company .address {
+  margin-bottom: 8px;
+
+  display: block;
+  color: var(--white);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.info-company .contact {
+  margin-bottom: 8px;
+
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.info-company .contact:hover,
+.info .contact:focus {
+  color: var(--accent-color);
+}
+
 /* portfolio */
 
-.services .btn {
+.services-button .btn {
+  margin-bottom: 50px;
+
   background-color: var(--btn-bg-color);
   cursor: pointer;
   font-family: inherit;
@@ -280,10 +337,47 @@ img {
   border: transparent;
 }
 
+.btn:not(last-child) {
+  margin-right: 8px;
+}
+
+.btn1-size {
+  width: 73px;
+}
+
+.btn2-size {
+  width: 125px;
+}
+
+.btn3-size {
+  width: 112px;
+}
+
+.btn4-size {
+  width: 103px;
+}
+
+.btn5-size {
+  width: 130px;
+}
+
 .services .btn:hover,
 .services .btn:focus {
   background-color: var(--accent-color);
   color: var(--white);
+}
+
+.models {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.models > .item {
+  margin-right: 30px;
+}
+
+.models > .item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .models .title {
@@ -308,6 +402,6 @@ img {
   padding: 20px 0;
 }
 
-.models > li {
+.models > .item {
   border: 1px solid #eee;
 }
